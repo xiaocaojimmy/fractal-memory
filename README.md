@@ -174,14 +174,12 @@ fractal_memory/
 │   └── injector.py         # 注入策略（伪装/直接）
 ├── guards/                  # 防护模块
 │   └── ethics.py           # 伦理防护（时间定位等）
-└── examples/                # 示例
-    └── quick_start.py      # 快速开始示例
+├── examples/                # 示例
+│   └── quick_start.py      # 快速开始示例
+└── docs/                    # 文档
+    ├── Fractal_Memory_System_Report.md    # 完整实验报告
+    └── FRA_Philosophical_Reflection.md    # 哲学反思
 ```
-
-**计划中的模块**（待开发）：
-- `storage/` - 多种存储后端（JSON、向量数据库）
-- `utils/` - 工具函数（提取提示词、解析器）
-- `docs/` - 详细文档（实验报告、API参考）
 
 ---
 
@@ -206,12 +204,8 @@ pip install -e .
 
 ## 📚 文档
 
-- [完整实验报告](https://github.com/xiaocaojimmy/fractal-memory/blob/master/docs/Fractal_Memory_System_Report.md) - 7个实验的详细记录
-- [哲学反思](https://github.com/xiaocaojimmy/fractal-memory/blob/master/docs/FRA_Philosophical_Reflection.md) - 分形设计思想的验证
-
-**计划中的文档**（待编写）：
-- API参考文档
-- 伦理指南
+- [完整实验报告](./docs/Fractal_Memory_System_Report.md) - 7个实验的详细记录
+- [哲学反思](./docs/FRA_Philosophical_Reflection.md) - 分形设计思想的验证
 - 贡献指南
 
 ---
