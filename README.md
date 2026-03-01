@@ -240,7 +240,7 @@ pip install -e .
 
 ## 📜 许可证
 
-MIT License © 2024
+MIT License © 2026
 
 ---
 
