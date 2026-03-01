@@ -165,26 +165,23 @@ print(response["decision_log"])  # 决策日志
 
 ```
 fractal_memory/
-├── __init__.py
-├── core/
-│   ├── memory.py          # 主类 FractalMemory
-│   ├── profile.py         # 画像管理（价值系统）
-│   ├── injector.py        # 注入策略（伪装/直接）
-│   └── detector.py        # 问句检测（实验#7优化）
-├── guards/
-│   ├── ethics.py          # 伦理防护（时间定位等）
-│   └── boundaries.py      # 边界管理
-├── storage/
-│   ├── json_store.py      # 本地存储
-│   └── vector_store.py    # 可选向量存储
-├── utils/
-│   ├── extraction.py      # 信息提取提示词
-│   └── parsers.py         # JSON解析
-└── examples/
-    ├── quick_start.py
-    ├── with_reflection.py
-    └── multi_identity.py
+├── __init__.py              # 包初始化
+├── README.md                # 项目文档
+├── wechat_qrcode.jpg        # 支持二维码
+├── core/                    # 核心模块
+│   ├── memory.py           # 主类 FractalMemory
+│   ├── profile.py          # 画像管理（价值系统）
+│   └── injector.py         # 注入策略（伪装/直接）
+├── guards/                  # 防护模块
+│   └── ethics.py           # 伦理防护（时间定位等）
+└── examples/                # 示例
+    └── quick_start.py      # 快速开始示例
 ```
+
+**计划中的模块**（待开发）：
+- `storage/` - 多种存储后端（JSON、向量数据库）
+- `utils/` - 工具函数（提取提示词、解析器）
+- `docs/` - 详细文档（实验报告、API参考）
 
 ---
 
@@ -209,10 +206,13 @@ pip install -e .
 
 ## 📚 文档
 
-- [完整实验报告](./docs/Fractal_Memory_System_Report.md) - 7个实验的详细记录
-- [哲学反思](./docs/FRA_Philosophical_Reflection.md) - 分形设计思想的验证
-- [API参考](./docs/API.md) - 完整API文档
-- [伦理指南](./docs/ETHICS.md) - 使用建议和限制
+- [完整实验报告](https://github.com/xiaocaojimmy/fractal-memory/blob/master/docs/Fractal_Memory_System_Report.md) - 7个实验的详细记录
+- [哲学反思](https://github.com/xiaocaojimmy/fractal-memory/blob/master/docs/FRA_Philosophical_Reflection.md) - 分形设计思想的验证
+
+**计划中的文档**（待编写）：
+- API参考文档
+- 伦理指南
+- 贡献指南
 
 ---
 
@@ -224,8 +224,9 @@ pip install -e .
 - **多语言支持**：扩展身份检测到其他语言
 - **性能优化**：减少提取延迟
 - **边缘案例**：发现并修复新的提取错误
+- **文档完善**：编写API文档和伦理指南
 
-详见 [CONTRIBUTING.md](./CONTRIBUTING.md)
+请通过 GitHub Issues 提交问题或建议。
 
 ---
 
